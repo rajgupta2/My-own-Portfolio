@@ -3,13 +3,14 @@ import { Bounce } from 'react-awesome-reveal';
 import Fade from "react-awesome-reveal";
 import projectList from "./projectList.js";
 import "./projects.css";
+import Image from 'next/image.js';
 
 const Project = (props) => {
     const { imgUrl, name, desc, stack, gitHubUrl, website } = props;
     return (
         <Fade bottom>
             <div className="mb-3 section_single_projects">
-                <img src={imgUrl} alt="project-image" />
+                <Image src={imgUrl} alt="project-image" width='100%' height="100%" />
                 <div className="project_contents">
                     <div className='project_description text-justify'>
                         <div className="switching-color">{name}</div>

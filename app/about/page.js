@@ -1,7 +1,7 @@
 "use client";
 import { Fade, Bounce } from "react-awesome-reveal";
 import styles from './about.module.css';
-
+import Image from "next/image";
 const About = () => {
     return (
         <>
@@ -12,7 +12,7 @@ const About = () => {
             </div>
             <div className="row">
                 <div className="col-12 col-md-4 col-lg-4 pt-3">
-                    <img src="Raj-img.png" alt="Raj-Gupta-Image" className={styles.about_image} />
+                    <Image src="Raj-img.png" alt="Raj-Gupta-Image" width='100%' height="100%" className={styles.about_image} />
                 </div>
                 <div className={"col-12 col-md-8 col-lg-8 pt-3 "+ styles.about_text}>
                     <Fade>
