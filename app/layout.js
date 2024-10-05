@@ -10,6 +10,8 @@ export default function Layout({ children }) {
       <head>
         <title>Raj Gupta Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="Raj Gupta, Raj Gupta Portfolio"/>
+        <meta name="description" content="It is a Raj Gupta portfolio, showing his skills, projects, and contacts."/>
         <meta name="google-site-verification" content="008JgsUeBih0IuChXpLy5t96SrF78JfO5Y1-8raKKcc" />
       </head>
       <body className='bg-black text-white'>
