@@ -2,6 +2,7 @@
 import Navbar from '@/Components/Navbar';
 import './globals.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Script from 'next/script';
 
 export default function Layout({ children }) {
   return (
@@ -25,7 +26,7 @@ export default function Layout({ children }) {
             </div>
           </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></Script>
       </body>
     </html>
   )
