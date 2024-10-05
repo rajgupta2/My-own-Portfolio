@@ -12,12 +12,12 @@ const Project = (props) => {
                 <img src={imgUrl} alt="project-image" />
                 <div className="project_contents">
                     <div className='project_description text-justify'>
-                        <h1 className="switching-color">{name}</h1>
-                        <p className='text-justify'>{desc}</p>
-                        <h2 className="switching-color">Built with</h2>
-                        <p className="text-success">{stack}</p>
+                        <div className="switching-color">{name}</div>
+                        <div className='text-justify'>{desc}</div>
+                        <div className="switching-color">Built with</div>
+                        <div className="text-success">{stack}</div>
                     </div>
-                    <div className="project_icon p-5">
+                    <div className="project_icon">
                         <a href={gitHubUrl.url}>
                             {gitHubUrl.icon}
                         </a>
