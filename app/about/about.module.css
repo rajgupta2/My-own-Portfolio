@@ -1,0 +1,32 @@
+.about_image {
+    border-color: white;
+    border-radius: 25px 10px 10px 25px;
+    border-style: solid;
+    min-width: 100%;
+    max-width: 100%;
+    cursor: pointer;
+    max-height: 75vh;
+}
+.about_text{
+    font-weight: lighter;
+}
+@media screen and (min-width:786px) {
+    .about_text {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width:576px) {
+    .about_text {
+        font-size: normal;
+    }
+}
+@media screen and (min-width:1024px) {
+    .about_text {
+        font-size: 25px;
+    }
+}
+
+
+.about_image:hover {
+    rotate: 10deg;
+}

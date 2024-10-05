@@ -1,0 +1,33 @@
+.section_single_projects {
+    border: 3px solid rgb(64, 74, 208);
+    position: relative;
+    overflow: hidden;
+}
+.section_single_projects img{
+    width: 100%;
+    height: 100%;
+   /* position: relative;*/
+    object-fit: cover;
+}
+.project_contents{
+    width: 100%;
+    height: 100%;
+    background: #1c0800dd;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform: translateY(100%);
+    transition: all 250ms linear;
+}
+.project_description{
+    text-align: center;
+    padding-left: 25vw;
+    padding-right: 25vw;
+    padding-top: 35vh;
+}
+.project_icon{
+    font-size: 35px;
+}
+.section_single_projects:hover .project_contents{
+    transform: translateY(0);
+}
