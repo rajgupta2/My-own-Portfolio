@@ -25,8 +25,8 @@ function MapSkills() {
 function MapDesSkills() {
     return (
         <>
-            <ul>
-                <li>
+            <ul className='fs-5 text-secondary'>
+                <li >
                     <span className="text-success">Programming languages:&nbsp;</span>
                     C, C++, C#.
                 </li>
@@ -40,19 +40,22 @@ function MapDesSkills() {
                 </li>
                 <li>
                     <span className="text-success">Database: &nbsp;</span>
-                    MySQL, MSSQL, MongoDB.
+                    MySQL, MSSQL, MongoDB, MongoDB Atlas.
                 </li>
                 <li>
                     <span className="text-success">AWS Cloud:&nbsp;</span>
-                    EC2 VM, Elastic Load Balancer, S3, EBS, Amazon RDS, Amazon NoSQL, Route 53, VPC, Elastic Beanstalk, and Serverless Lambda.
+                    EC2, load balancer, AWS S3, Elastic Block Store, Amazon RDS, Amazon NoSQL, Route-53, Amazon
+                    EFS, VPC, Elastic Beanstalk, AWS Lambda, CloudWatch, Auto Scaling, SNS, AWS IAM, AWS Cost Management,
+                    Shield, AWS Networking.
                 </li>
                 <li>
                     <span className="text-success">DevOps Tools:&nbsp;</span>
-                    Apache Tomcat, Maven, Git, and SonarQube.
+                    Git, Maven, Tomcat, SonarQube Server, SonarQube Scanner, Sonatype Nexus, Jenkins, Terraform,
+                    Netlify.
                 </li>
                 <li>
-                    <span className="text-success">Others:&nbsp;</span>
-                    DSA, OOPs, DBMS, Computer Network
+                    <span className="text-success">Core Concept:&nbsp;</span>
+                    DSA, OOPS, DBMS, Computer Network
                 </li>
             </ul>
         </>
@@ -76,10 +79,10 @@ export default function Skills() {
             </div>
             <div className="row  mb-3 text-center">
                 <div className='col-6 col-md-6 col-lg-6 border border-primary'>
-                    <div className='btn text-white' style={{width:'100%'}} onClick={() => { setSkills(<MapSkills />) }}>Skills Box</div>
+                    <div className='btn text-white' style={{ width: '100%' }} onClick={() => { setSkills(<MapSkills />) }}>Skills Box</div>
                 </div>
                 <div className='col-6 col-md-6 col-lg-6 border border-primary'>
-                    <div className='btn text-white' style={{width:'100%'}} onClick={() => { setSkills(<MapDesSkills />) }}>Skills description</div>
+                    <div className='btn text-white' style={{ width: '100%' }} onClick={() => { setSkills(<MapDesSkills />) }}>Skills description</div>
                 </div>
             </div>
             <div className="row">
