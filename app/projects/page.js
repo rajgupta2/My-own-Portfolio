@@ -10,7 +10,7 @@ const Project = (props) => {
     return (
         <Fade bottom>
             <div className="mb-3 section_single_projects">
-                <Image src={imgUrl} alt="project-image" width='100%' height="100%" />
+                <Image src={"/"+imgUrl} alt="project-image" width={0} height={0} sizes="100vw" />
                 <div className="project_contents">
                     <div className='project_description text-justify'>
                         <div className="switching-color">{name}</div>
@@ -43,8 +43,7 @@ export default function Projects() {
             <div className='row'>
                 <Fade bottom>
                     <p style={{ fontSize: 'larger' }}>
-                        These are the projects that I have worked upon in the past few
-                        months.
+                        These are some of the projects I have worked on.
                     </p>
                 </Fade>
             </div>

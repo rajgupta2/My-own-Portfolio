@@ -11,20 +11,20 @@ const About = () => {
                 </h1>
             </div>
             <div className="row">
-                <div className="col-12 col-md-4 col-lg-4 pt-3">
-                    <Image src="Raj-img.png" alt="Raj-Gupta-Image" width='100%' height="100%" className={styles.about_image} />
-                </div>
+                {/* <div className="col-12 col-md-4 col-lg-4 pt-3">
+                    <Image src="/Raj-img.jpeg" alt="Raj-Gupta-Image" width={'253'} height={'320'} className={styles.about_image}/>
+                </div> */}
                 <div className={"col-12 col-md-8 col-lg-8 pt-3 "+ styles.about_text}>
                     <Fade>
                         <p className="text-justify">
-                            I am a full stack developer with expertise in <b className="text-success">MERN stack, .NET MVC and .NET Core. </b>
-                            I also have a experience working with <b className="text-success">AWS cloud computing and devops culture.</b>
+                            I am a full stack developer with expertise in <b className="text-success">MERN stack, .NET MVC and .NET Core. </b><br/>
+                            I also have a experience working with <b className="text-success">AWS cloud resources and devops culture.</b>
                         </p>
                     </Fade>
                     <Fade bottom>
                         <p className="text-justify">
-                             Apart from that, I am enrolled in a <b className="switching-color"> B.Tech degree specializing in Information Technology </b> at
-                             Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya, Chitrakoot, and I will complete it in 2025.
+                             Apart from that, I am graduating in June 2025 with the<b className="switching-color"> B.Tech degree in Information Technology </b>
+                            from Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya, Chitrakoot.
                         </p>
                     </Fade>
                 </div>

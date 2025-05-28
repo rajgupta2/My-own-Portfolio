@@ -24,7 +24,7 @@ export default function Layout({ children }) {
           </div>
           <div id="footer" className='row'>
             <div className='col-12 col-md-12 col-lg-12'>
-              <h6 className="text-center" style={{fontWeight:'lighter'}}>All &copy; are reserved - Raj Gupta - 2024</h6>
+              <h6 className="text-center" style={{fontWeight:'lighter'}}>All &copy; are reserved - Raj Gupta - 2025</h6>
             </div>
           </div>
         </div>
