@@ -21,7 +21,7 @@ function FindMeHere(props) {
         props.ContactList.map((e, index) => {
             return (
                     <div className='mt-5 mb-5' key={index}>
-                        <a href={e.url} className='btn btn-lg border border-primary w-25'>
+                        <a href={e.url} className='btn btn-lg border border-primary' style={{width:'150px'}}>
                             <span>{e.name}</span>
                         </a>
                     </div>

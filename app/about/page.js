@@ -19,7 +19,7 @@ const About = () => {
                         <p className="text-justify">
                             I have <b>recently completed</b> my bachelor&apos;s degree in <b>B.Tech (Information Technology) </b> from Mahatma Gandhi Chitrakoot Gramodaya Vishwavidayalya, Chitrakoot, Satna, Madhya Pradesh.
                         </p>
-                        <p>
+                        <p className="text-justify">
                             During my <b>academic journey</b>, I built several <b>real world projects</b> using the <b>MERN stack, Next.js, and tools like Tailwind CSS and Git</b>.
                         </p>
                     </Fade>

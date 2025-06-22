@@ -6,7 +6,7 @@ export default function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg position-fixed border-bottom">
             <span className="switching-color navbar-heading"  style={{width:'40vw',paddingLeft:'7vw'}}>Raj Gupta</span>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button className="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
 
