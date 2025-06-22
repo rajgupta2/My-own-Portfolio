@@ -8,9 +8,9 @@ import Image from 'next/image.js';
 const Project = (props) => {
     const { imgUrl, name, desc, stack, gitHubUrl, website } = props;
     return (
-            <div className="p-lg-5 p-md-3 pt-2 my-2 section_single_projects border-2 border-info">
-                <h1>{name}</h1>
-                <Image src={"/"+imgUrl} alt="project-image" width={0} height={0} sizes="100vw" className='border border-2 border-black'/>
+            <div className="pt-2 mb-4 section_single_projects border-2 border-info">
+                <h3 className='ps-3'>{name}</h3>
+                <Image src={"/"+imgUrl} alt="project-image" width={0} height={0} sizes="100vw" className='border border-top'/>
                 {/* <div className="project_contents">
                     <div className='project_description text-justify'>
                         <div className="switching-color">{name}</div>
@@ -36,13 +36,10 @@ export default function Projects() {
         <>
             <div className='row'>
                 <h1 className="switching-color">My Projects </h1>
-            </div>
-            <div className='row'>
-                    <p style={{ fontSize: 'larger' }}>
+                <p style={{ fontSize: 'larger' }}>
                         These are some of the projects I have worked on.
-                    </p>
+                </p>
             </div>
-
             {
                 projectList.map((project, index) => {
                     return <Project {...project} key={index} />
