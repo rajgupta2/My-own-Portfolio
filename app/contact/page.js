@@ -4,7 +4,7 @@ import { Bounce, Fade, Reveal } from 'react-awesome-reveal';
 const whereToFind = [
     {
         name: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/raj-gupta-6b5655291'
+        url: 'https://www.linkedin.com/in/raj-gupta-ckt'
     },
     {
         name: 'Github',
@@ -20,13 +20,11 @@ function FindMeHere(props) {
     return (
         props.ContactList.map((e, index) => {
             return (
-                <Fade left key={index}>
-                    <div className='mt-5 mb-5'>
-                        <a href={e.url} className='my_btn'>
+                    <div className='mt-5 mb-5' key={index}>
+                        <a href={e.url} className='btn btn-lg border border-primary w-25'>
                             <span>{e.name}</span>
                         </a>
                     </div>
-                </Fade>
             );
         })
     );
@@ -35,19 +33,13 @@ export default function ContactPage() {
     return (
         <>
             <div className="row">
-                <Bounce >
-                    <h1 className="switching-color"> Contact Me </h1>
-                </Bounce>
+                <h1 className="switching-color"> Contact Me </h1>
             </div>
             <div className="row">
                 <div className="col-12 col-md-5 col-lg-5">
-                    <Fade bottom>
-                        <h3 style={{fontWeight:'lighter'}}> Want to connect with me?</h3>
-                        <h3 style={{fontWeight:'lighter'}}> Find me here...</h3>
-                    </Fade>
-                    <Reveal>
+                        <h3> Want to connect with me?</h3>
+                        <h3> Find me here...</h3>
                         <FindMeHere ContactList={whereToFind} />
-                    </Reveal>
                 </div>
                 <div className="col-12 col-md-7 col-lg-7">
                     <iframe

@@ -7,7 +7,7 @@
     max-height: 75vh;
 }
 .about_text{
-    font-weight: lighter;
+    /* font-weight: light; */
 }
 @media screen and (min-width:786px) {
     .about_text {
@@ -21,7 +21,7 @@
 }
 @media screen and (min-width:1024px) {
     .about_text {
-        font-size: 25px;
+        font-size: 22px;
     }
 }
 

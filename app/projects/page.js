@@ -8,10 +8,10 @@ import Image from 'next/image.js';
 const Project = (props) => {
     const { imgUrl, name, desc, stack, gitHubUrl, website } = props;
     return (
-        <Fade bottom>
-            <div className="mb-3 section_single_projects">
-                <Image src={"/"+imgUrl} alt="project-image" width={0} height={0} sizes="100vw" />
-                <div className="project_contents">
+            <div className="p-5 m-2 section_single_projects border-2 border-info">
+                <h1 className='text-sky-500'>{name}</h1>
+                <Image src={"/"+imgUrl} alt="project-image" width={0} height={0} sizes="100vw" className='border border-2 border-black'/>
+                {/* <div className="project_contents">
                     <div className='project_description text-justify'>
                         <div className="switching-color">{name}</div>
                         <div className='text-justify'>{desc}</div>
@@ -26,9 +26,8 @@ const Project = (props) => {
                             {website.icon}
                         </a>
                     </div>
-                </div>
+                </div> */}
             </div>
-        </Fade>
     );
 };
 
@@ -36,16 +35,12 @@ export default function Projects() {
     return (
         <>
             <div className='row'>
-                <Bounce >
-                    <h1 className="switching-color">My Projects </h1>
-                </Bounce>
+                <h1 className="switching-color">My Projects </h1>
             </div>
             <div className='row'>
-                <Fade bottom>
                     <p style={{ fontSize: 'larger' }}>
                         These are some of the projects I have worked on.
                     </p>
-                </Fade>
             </div>
             <div className='row'>
                 <div className='col-12 col-md-12 col-lg-12'>

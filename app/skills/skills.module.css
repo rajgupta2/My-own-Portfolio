@@ -2,16 +2,15 @@
     border-radius: 10px 10px 10px 10px;
     text-align: center;
     text-decoration: none;
-    background-color: rgb(30 41 59);
     padding-top: 52px;
     padding-bottom: 62px;
     margin-top:12px;
     margin-bottom:12px;
 }
 .skill_item:hover{
-    background-color: none;
+    transform: translateY(-15px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
-
 @media screen and (max-width:576px) {
     .skill_text {
         font-size: normal;

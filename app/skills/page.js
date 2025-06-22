@@ -8,8 +8,7 @@ import { useState } from 'react';
 function MapSkills() {
     return (
         skillsList.map((item, index) => (
-            <div key={index} className={"col-12 col-md-2 col-lg-2 " + styles.skill_item}>
-                <Fade bottom >
+            <div key={index} className={"col-12 col-md-2 col-lg-2 border shadow " + styles.skill_item}>
                     <a
                         href={item.url}
                         target="_blank"
@@ -18,7 +17,6 @@ function MapSkills() {
                         <span className='switching-color h1'>{item.icon} </span><br />
                         <span className="text-success btn">{item.spanText}</span>
                     </a>
-                </Fade>
             </div>
         )));
 }
@@ -66,25 +64,21 @@ export default function Skills() {
     return (
         <>
             <div className='row'>
-                <Bounce >
                     <h1 className="switching-color"> Skills </h1>
-                </Bounce>
             </div>
             <div className='row'>
-                <Fade>
                     <p className={styles.skill_text}   >
                         Yes, I am always eager to learn new technologies.
                     </p>
-                </Fade>
             </div>
-            <div className="row  mb-3 text-center">
+            {/* <div className="row  mb-3 text-center">
                 <div className='col-6 col-md-6 col-lg-6 border border-primary'>
                     <div className='btn text-white' style={{ width: '100%' }} onClick={() => { setSkills(<MapSkills />) }}>Skills Box</div>
                 </div>
                 <div className='col-6 col-md-6 col-lg-6 border border-primary'>
                     <div className='btn text-white' style={{ width: '100%' }} onClick={() => { setSkills(<MapDesSkills />) }}>Skills description</div>
                 </div>
-            </div>
+            </div> */}
             <div className="row">
                 {
                     useSkills

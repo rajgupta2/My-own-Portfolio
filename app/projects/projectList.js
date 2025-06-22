@@ -35,7 +35,7 @@ const Projects_data = [
   },
   {
     id: 3,
-    name: "Engineer ",
+    name: "Engineer - Technotes ",
     desc: "The Engineer website focused on studying and contributing to works and notes.",
     stack: "Next-JS Tailwind-CSS  Git",
     gitHubUrl: {
@@ -48,20 +48,20 @@ const Projects_data = [
     },
     imgUrl: "Engineer.png",
   },
-  {
-    id:4 ,
-    name: "My own Portfolio",
-    desc: "My portfolio includes a career summary, personal introduction, my projects and my skills. ",
-    stack: "Next-JS Bootstrap CSS JSX Git",
-    gitHubUrl: {
-      icon: <GrGithub />,
-      url: "https://github.com/rajgupta2/Raj-Gupta-Portfolio",
-    },
-    website: {
-      icon: <TbWorld />,
-      url: "https://raj-gupta-portfolio.netlify.app/",
-    },
-    imgUrl: "Portfolio.png",
-  },
+  // {
+  //   id:4 ,
+  //   name: "My own Portfolio",
+  //   desc: "My portfolio includes a career summary, personal introduction, my projects and my skills. ",
+  //   stack: "Next-JS Bootstrap CSS JSX Git",
+  //   gitHubUrl: {
+  //     icon: <GrGithub />,
+  //     url: "https://github.com/rajgupta2/Raj-Gupta-Portfolio",
+  //   },
+  //   website: {
+  //     icon: <TbWorld />,
+  //     url: "https://raj-gupta-portfolio.netlify.app/",
+  //   },
+  //   imgUrl: "Portfolio.png",
+  // },
 ];
 export default Projects_data;

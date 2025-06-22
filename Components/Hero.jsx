@@ -33,7 +33,7 @@ export default function Hero() {
           </div>
 
           <Fade left className='mt-4 mb-4'>
-            <a href="Raj Gupta.pdf" download className="my_btn">
+            <a href="Raj Gupta.pdf" download className="btn btn-lg border border-primary">
               <span className='p-5 mt-2 text-primary'>Download Resume</span>
             </a>
           </Fade>

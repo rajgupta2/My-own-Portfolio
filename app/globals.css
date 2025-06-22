@@ -7,11 +7,11 @@
 
 .navbar {
   z-index: 1000;
-  background-color: rgba(93, 61, 61, 0.765);
+  background-color: rgba(255, 255, 255);
 }
 
 .switching-color {
-  color: #fbbf24 !important;
+  color: #202cda !important;
 }
 
 .nav-link,
@@ -66,7 +66,7 @@
   border: 2px solid;
   border-radius: 0px 16px 0px 16px;
   border-color: #1d25d8d6;
-  color: white;
+  /* color: white; */
   text-decoration: none;
 }
 
@@ -76,7 +76,7 @@ a{
 table,tr,td{
   border:1px solid white !important;
   background-color: black !important;
-  color: white !important;
+  color: white;
   a{
     color:rgb(255, 255, 255) !important;
   }

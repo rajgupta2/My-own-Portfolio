@@ -43,10 +43,10 @@ const navlink = [
     //     icon: <SiProgress className="link-icon" />,
     //     url: "works",
     // },
-    {
-      text: "Resume",
-      icon: <RxResume className="link-icon" />,
-      url: "resume",
-  },
+  //   {
+  //     text: "Resume",
+  //     icon: <RxResume className="link-icon" />,
+  //     url: "resume",
+  // },
   ];
 export default navlink;
