@@ -17,7 +17,7 @@ const About = () => {
                 <div className={"col-12  pt-3 "+ styles.about_text}>
                     <Fade>
                         <p className="text-justify">
-                            I have <b>recently completed</b> my bachelor's degree in <b>B.Tech (Information Technology) </b> from Mahatma Gandhi Chitrakoot Gramodaya Vishwavidayalya, Chitrakoot, Satna, Madhya Pradesh.
+                            I have <b>recently completed</b> my bachelor&apos;s degree in <b>B.Tech (Information Technology) </b> from Mahatma Gandhi Chitrakoot Gramodaya Vishwavidayalya, Chitrakoot, Satna, Madhya Pradesh.
                         </p>
                         <p>
                             During my <b>academic journey</b>, I built several <b>real world projects</b> using the <b>MERN stack, Next.js, and tools like Tailwind CSS and Git</b>.
@@ -26,7 +26,7 @@ const About = () => {
                     <Fade>
                         <p className="text-justify">
                             I have a strong foundation in <b>full stack web development</b> and a growing interest in DevOps and <b>cloud technologies</b>.
-                            I’m now <b>looking for opportunities </b>where I can grow <b>as a web developer or cloud trainee</b> , contribute to meaningful projects, and learn from experienced teams.
+                            I&apos;m now <b>looking for opportunities </b>where I can grow <b>as a web developer or cloud trainee</b> , contribute to meaningful projects, and learn from experienced teams.
                         </p>
                     </Fade>
                 </div>
