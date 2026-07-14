@@ -7,7 +7,7 @@
 
 .navbar {
   z-index: 1000;
-  background-color: rgba(255, 255, 255);
+  background-color: #ffffff;
 }
 
 .switching-color {
@@ -16,71 +16,70 @@
 
 .nav-link,
 .navbar-heading {
-  font-size: larger !important;
+  font-size: 1.1rem !important;
 }
 
 .navbar-toggler {
   border-color: rgb(42, 210, 210) !important;
 }
 
-@media screen and (max-width:586px) {
-  .nav-link {
-    margin-left: 55px;
-  }
-  .my_btn {
-    padding-left: 22px;
-    padding-right: 12px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    margin-bottom: 35px;
-  }
-}
-
-@media screen and (min-width:586px) and (max-width: 991px) {
-  .nav-link {
-    margin-left: 55px;
-  }
-
-  .my_btn {
-    padding-left: 42px;
-    padding-right: 32px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    margin-bottom: 35px;
-  }
-}
-
-@media screen and (min-width:992px) {
-  .my_btn {
-    padding-left: 62px;
-    padding-right: 52px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    font-size: larger;
-    margin-bottom: 35px;
-  }
-}
-
-
+/* Button base style */
 .my_btn {
-  border: 2px solid;
-  border-radius: 0px 16px 0px 16px;
-  border-color: #1d25d8d6;
-  /* color: white; */
+  border: 2px solid #1d25d8d6;
+  border-radius: 0 16px 0 16px;
   text-decoration: none;
+  padding: 12px 24px;
+  margin-bottom: 35px;
+  font-size: 1rem;
 }
 
-a{
+/* Small screens */
+@media screen and (max-width: 586px) {
+  .nav-link {
+    margin-left: 55px;
+  }
+  .my_btn {
+    padding: 12px 12px 12px 22px;
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: 586px) and (max-width: 991px) {
+  .nav-link {
+    margin-left: 55px;
+  }
+  .my_btn {
+    padding: 12px 32px 12px 42px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+  .my_btn {
+    padding: 12px 52px 12px 62px;
+    font-size: 1.1rem;
+  }
+}
+
+a {
   text-decoration: none !important;
 }
-table,tr,td{
-  border:1px solid white !important;
+
+/* Table styling */
+table,
+tr,
+td {
+  border: 1px solid white !important;
   background-color: black !important;
   color: white;
-  a{
-    color:rgb(255, 255, 255) !important;
-  }
 }
-td{
+
+table a,
+tr a,
+td a {
+  color: rgb(255, 255, 255) !important;
+}
+
+td {
   text-wrap: pretty;
 }

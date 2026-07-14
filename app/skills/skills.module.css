@@ -1,54 +1,65 @@
-.skill_item{
-    border-radius: 10px 10px 10px 10px;
+.skill_item {
+    border-radius: 10px;
     text-align: center;
     text-decoration: none;
-    padding-top: 52px;
-    padding-bottom: 62px;
-    margin-top:12px;
-    margin-bottom:12px;
+    padding: 52px 0 62px;
+    margin: 12px 0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.skill_item:hover{
-    transform: translateY(-15px);
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+.skill_item:hover {
+    transform: translateY(-35px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
-@media screen and (max-width:576px) {
+
+.skill_text {
+    font-weight: 300;
+    font-size: 0.95rem;
+}
+
+/* Small phones */
+@media screen and (max-width: 576px) {
     .skill_text {
-        font-size: normal;
-        font-weight: lighter;
+        font-size: 0.9rem;
     }
 }
-@media screen and (min-width:576px ) and (max-width:768px) {
-    .skill_text {
-        font-size: normal;
-        font-weight: lighter;
-    }
-    .skill_item{
-        margin-left:4vw !important;
-        margin-right: 4vw !important;
-        max-width: 37vw !important;
+
+/* Large phones / small tablets */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .skill_item {
+        margin-left: 4vw;
+        margin-right: 4vw;
+        max-width: 37vw;
     }
 }
-@media screen and (min-width:768px) and (max-width:1024px) {
-    .skill_text {
-        font-size: normal;
-        font-weight: lighter;
-    }
-    .skill_item{
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .skill_item {
         margin-left: 3vw;
         margin-right: 3vw;
         min-width: 16vw;
     }
 }
-@media screen and (min-width:1024px) {
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
     .skill_text {
-        font-size: 25px;
-        font-weight: lighter;
+        font-size: 1.4rem;
     }
-    .skill_item{
+    .skill_item {
         margin-left: 1vw;
         margin-right: 1vw;
         min-width: 15.5vw;
     }
 }
 
-
+/* Respect motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .skill_item {
+        transition: none;
+    }
+    .skill_item:hover {
+        transform: none;
+    }
+}

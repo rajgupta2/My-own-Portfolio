@@ -1,31 +1,19 @@
+.about_text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.about_text p {
+    margin-bottom: 1.2rem;
+}
+
+.about_text b {
+    font-weight: 600;
+    color: #111;
+}
+
 .about_image {
-    border-color: white;
-    border-radius: 25px 10px 10px 25px;
-    border-style: solid;
-    max-width: 100%;
-    cursor: pointer;
-    max-height: 75vh;
-}
-.about_text{
-    /* font-weight: light; */
-}
-@media screen and (min-width:786px) {
-    .about_text {
-        font-size: 22px;
-    }
-}
-@media screen and (max-width:576px) {
-    .about_text {
-        font-size: normal;
-    }
-}
-@media screen and (min-width:1024px) {
-    .about_text {
-        font-size: 22px;
-    }
-}
-
-
-.about_image:hover {
-    rotate: 10deg;
+    border-radius: 8px;
+    object-fit: cover;
 }
