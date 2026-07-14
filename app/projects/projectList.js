@@ -4,10 +4,53 @@ import { TbWorld } from "react-icons/tb";
 // projects' id, name, stacks, icon and url data
 const Projects_data = [
   {
-    id: 1,
+    name: "SkillHub",
+    desc: "A student resource-sharing platform where users discover study resources, pyqs, tutorials, articles, college profiles, and community engagements through an intuitive dashboard. Built with server-side rendering and JWT-based authentication, integrating with a separate SkillHub backend via REST APIs.",
+    stack:
+      "Next-JS TypeScript React Tailwind-CSS shadcn/ui Docker REST-API AWS-S3",
+    gitHubUrl: {
+      icon: <GrGithub />,
+      url: "https://github.com/rajgupta2/SkillHub",
+    },
+    website: {
+      icon: <TbWorld />,
+      url: "https://skillhub-student.vercel.app/",
+    },
+    imgUrl: "SkillHub.png",
+  },
+  {
+    name: "StudyStudent",
+    desc: "An educational platform with separate student and admin dashboards. Students submit assignments, take tests, and access study materials, while admins assign homework, evaluate submissions, and manage student records — with Google Sign-In and reCAPTCHA-secured authentication.",
+    stack:
+      "Node-JS Express-JS MongoDB Mongoose Passport-JS Google-OAuth reCAPTCHA",
+    gitHubUrl: {
+      icon: <GrGithub />,
+      url: "https://github.com/rajgupta2/StudyStudent",
+    },
+    website: {
+      icon: <TbWorld />,
+      url: "https://studystudent.onrender.com/",
+    },
+    imgUrl: "StudyStudent.png",
+  },
+  {
+    name: "AWS Terraform Infrastructure",
+    desc: "An Infrastructure-as-Code project built during my DevOps internship at TechEazy Consulting. Used Terraform to provision and manage AWS infrastructure — including EC2 instances, S3 storage, and IAM roles/policies — with CloudWatch configured for monitoring and alerting.",
+    stack: "Terraform AWS-EC2 AWS-S3 AWS-IAM AWS-CloudWatch AWS-SNS AWS-CLI",
+    gitHubUrl: {
+      icon: <GrGithub />,
+      url: "https://github.com/rajgupta2/tech_eazy_devops_rajgupta2",
+    },
+    website: {
+      icon: <TbWorld />,
+      url: "",
+    },
+    imgUrl: "TechEazyDevOps.png",
+  },
+  {
     name: "Techwork",
-    desc: "On this platform, there were two user modes: developer mode and client mode. With each other's contact details at hand, the developers and clients could establish connections.According to his requirements, the client may look for a developer, and the developer may ask for a position on the client's project.",
-    stack: "HTML CSS Bootstrap JavaScript jQuery .NET-MVC MSSQL-Server   Entity-Framework ",
+    desc: "A collaboration platform connecting developers and clients through role-based dashboards. Clients post project requirements and find developers matching their needs, while developers browse listings and bid on projects, all backed by secure, role-based authentication.",
+    stack: "ASP.NET-MVC C# Entity-Framework MSSQL-Server MySQL",
     gitHubUrl: {
       icon: <GrGithub />,
       url: "https://github.com/rajgupta2/Techwork",
@@ -19,49 +62,18 @@ const Projects_data = [
     imgUrl: "Techwork.png",
   },
   {
-    id: 2,
-    name: "StudyStudent",
-    desc: "A platform called StudyStudent allowed students to access study guides, take online tests, and turn in their homework. The administrator, who is also the teacher, can upload study materials, manage student results, and assign homework.",
-    stack: "HTML CSS Bootstrap JavaScript jQuery Node-JS Mongoose MongoDB  OAuth-2.0  Google-Recaptcha-API",
+    name: "Engineer - Technotes",
+    desc: "A lightweight platform for studying and publishing technical notes, focused on fast page loads and clean content presentation. It is hosted on github pages.",
+    stack: "Next-JS Tailwind-CSS Git Github-pages ",
     gitHubUrl: {
       icon: <GrGithub />,
-      url: "https://github.com/rajgupta2/StudyStudent",
+      url: "https://github.com/rajgupta2/Engineer",
     },
     website: {
       icon: <TbWorld />,
-      url: "https://github.com/rajgupta2/",
-    },
-    imgUrl: "StudyStudent.png",
-  },
-  {
-    id: 3,
-    name: "Engineer - Technotes ",
-    desc: "The Engineer website focused on studying and contributing to works and notes.",
-    stack: "Next-JS Tailwind-CSS  Git",
-    gitHubUrl: {
-      icon: <GrGithub />,
-      url: "https://github.com/rajgupta2/rajgupta2.github.io",
-    },
-    website: {
-      icon: <TbWorld />,
-      url: "https://rajgupta2.github.io/",
+      url: "https://rajgupta2.github.io/Engineer/",
     },
     imgUrl: "Engineer.png",
   },
-  // {
-  //   id:4 ,
-  //   name: "My own Portfolio",
-  //   desc: "My portfolio includes a career summary, personal introduction, my projects and my skills. ",
-  //   stack: "Next-JS Bootstrap CSS JSX Git",
-  //   gitHubUrl: {
-  //     icon: <GrGithub />,
-  //     url: "https://github.com/rajgupta2/Raj-Gupta-Portfolio",
-  //   },
-  //   website: {
-  //     icon: <TbWorld />,
-  //     url: "https://raj-gupta-portfolio.netlify.app/",
-  //   },
-  //   imgUrl: "Portfolio.png",
-  // },
 ];
 export default Projects_data;

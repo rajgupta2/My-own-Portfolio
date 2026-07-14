@@ -11,7 +11,7 @@ export default function Navbar() {
             </button>
 
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav mr-auto">
+                <ul className="navbar-nav mx-auto">
                     {
                         navlink.map((item, index) => {
                             return <li className="nav-item" key={index}>

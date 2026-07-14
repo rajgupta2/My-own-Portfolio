@@ -1,56 +1,82 @@
+
 "use client";
-import { Bounce, Fade, Reveal } from 'react-awesome-reveal';
+import { BsLinkedin, BsGithub, BsEnvelopeFill } from "react-icons/bs";
+import styles from "./Contact.module.css";
 
 const whereToFind = [
     {
-        name: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/raj-gupta-ckt'
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/raj-gupta-ckt",
+        icon: <BsLinkedin size={22} />,
     },
     {
-        name: 'Github',
-        url: 'https://www.github.com/rajgupta2'
+        name: "Github",
+        url: "https://github.com/rajgupta2",
+        icon: <BsGithub size={22} />,
     },
     {
-        name: 'Email',
-        url: 'mailto:rajgupta.ckt22@gmail.com'
-    }
+        name: "Email",
+        url: "mailto:rajgupta.ckt22@gmail.com",
+        icon: <BsEnvelopeFill size={22} />,
+    },
 ];
 
-function FindMeHere(props) {
+function SocialLinks({ list }) {
     return (
-        props.ContactList.map((e, index) => {
-            return (
-                    <div className='mt-5 mb-5' key={index}>
-                        <a href={e.url} className='btn btn-lg border border-primary' style={{width:'150px'}}>
-                            <span>{e.name}</span>
-                        </a>
-                    </div>
-            );
-        })
+        <div className={styles.socialRow}>
+            {list.map((e, index) => (
+                <a
+                    key={index}
+                    href={e.url}
+                    className={styles.socialIcon}
+                    title={e.name}
+                >
+                    {e.icon}
+                </a>
+            ))}
+        </div>
     );
 }
+
 export default function ContactPage() {
     return (
-        <>
-            <div className="row">
-                <h1 className="switching-color"> Contact Me </h1>
+      <div className="mb-5">
+        <div className="row">
+          <h1 className="switching-color">Contact</h1>
+          <p className="fs-5 text-muted">
+            Open to MERN and AWS/DevOps opportunities. Let&apos;s connect.
+          </p>
+        </div>
+
+        <div className="row mt-3">
+          <div className="col">
+            <div className={styles.card}>
+              <h4>Certifications</h4>
+              <div className={styles.credlyWrap}>
+                <img
+                  src="https://credly-readme-stats.onrender.com/api/overview?username=raj-gupta.62a5ed7b&theme=github_light&sort=issuer&columns=3&show_issuer=true"
+                  alt="Raj's Credly certification badges"
+                  className={styles.credlyImg}
+                />
+                <a
+                  href="https://www.credly.com/users/raj-gupta.62a5ed7b/badges"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.credlyLink}
+                >
+                  View all badges on Credly
+                </a>
+              </div>
             </div>
-            <div className="row">
-                <div className="col-12 col-md-5 col-lg-5">
-                        <h3> Want to connect with me?</h3>
-                        <h3> Find me here...</h3>
-                        <FindMeHere ContactList={whereToFind} />
-                </div>
-                <div className="col-12 col-md-7 col-lg-7">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3611.627179459763!2d80.85214472432999!3d25.148292301044286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sMahatma%20Gandhi%20Chitrakoot%20Gramodaya!5e0!3m2!1sen!2sin!4v1715572734501!5m2!1sen!2sin"
-                        style={{ border: 0, width: '100%', maxWidth: '100%' }}
-                        className="w-full"
-                        loading="lazy"
-                        height={400}
-                    ></iframe>
-                </div>
+          </div>
+
+          <div className="col">
+            <div className={styles.card}>
+              <h4>Find me here</h4>
+              <SocialLinks list={whereToFind} />
             </div>
-        </>
-    )
+          </div>
+        </div>
+      </div>
+    );
 }
