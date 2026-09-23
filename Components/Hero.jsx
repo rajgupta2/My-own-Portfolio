@@ -36,7 +36,7 @@ export default function Hero() {
 
       <Fade left className="mt-4 mb-4">
         <a
-          href="https://drive.google.com/file/d/1tsUEOUUYt0hcIqHgM_qRjLbIdBIXzneb/view?usp=drivesdk"
+          href="https://drive.google.com/file/d/1QPb1dcbIgbFkyAaNtxg5OziLcvDA4Ang/view?usp=drive_link"
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-lg border border-primary"

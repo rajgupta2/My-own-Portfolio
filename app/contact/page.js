@@ -44,36 +44,31 @@ export default function ContactPage() {
         <div className="row">
           <h1 className="switching-color">Contact</h1>
           <p className="fs-5 text-muted">
-            Open to MERN and AWS/DevOps opportunities. Let&apos;s connect.
+            Open to SWE opportunities. Let&apos;s connect.
           </p>
         </div>
 
-        <div className="row mt-3">
-          <div className="col">
-            <div className={styles.card}>
-              <h4>Certifications</h4>
-              <div className={styles.credlyWrap}>
-                <img
-                  src="https://credly-readme-stats.onrender.com/api/overview?username=raj-gupta.62a5ed7b&theme=github_light&sort=issuer&columns=3&show_issuer=true"
-                  alt="Raj's Credly certification badges"
-                  className={styles.credlyImg}
-                />
-                <a
-                  href="https://www.credly.com/users/raj-gupta.62a5ed7b/badges"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.credlyLink}
-                >
-                  View all badges on Credly
-                </a>
-              </div>
-            </div>
+        <div className={styles.card}>
+          <div className={styles.socialRow}>
+            <h4 className="mb-1">Find me here</h4>
+            <SocialLinks list={whereToFind} />
           </div>
-
-          <div className="col">
-            <div className={styles.card}>
-              <h4>Find me here</h4>
-              <SocialLinks list={whereToFind} />
+          <div className="mt-3">
+            <h4>Certifications</h4>
+            <div className={styles.credlyWrap}>
+              <img
+                src="https://credly-readme-stats.onrender.com/api/overview?username=raj-gupta.62a5ed7b&theme=github_light&sort=issuer&columns=3&show_issuer=true"
+                alt="Raj's Credly certification badges"
+                className={styles.credlyImg}
+              />
+              <a
+                href="https://www.credly.com/users/raj-gupta.62a5ed7b/badges"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.credlyLink}
+              >
+                View all badges on Credly
+              </a>
             </div>
           </div>
         </div>
