@@ -46,34 +46,6 @@ const Projects_data = [
       url: "",
     },
     imgUrl: "TechEazyDevOps.png",
-  },
-  {
-    name: "Techwork",
-    desc: "A collaboration platform connecting developers and clients through role-based dashboards. Clients post project requirements and find developers matching their needs, while developers browse listings and bid on projects, all backed by secure, role-based authentication.",
-    stack: "ASP.NET-MVC C# Entity-Framework MSSQL-Server MySQL",
-    gitHubUrl: {
-      icon: <GrGithub />,
-      url: "https://github.com/rajgupta2/Techwork",
-    },
-    website: {
-      icon: <TbWorld />,
-      url: "",
-    },
-    imgUrl: "Techwork.png",
-  },
-  {
-    name: "Engineer - Technotes",
-    desc: "A lightweight platform for studying and publishing technical notes, focused on fast page loads and clean content presentation. It is hosted on github pages.",
-    stack: "Next-JS Tailwind-CSS Git Github-pages ",
-    gitHubUrl: {
-      icon: <GrGithub />,
-      url: "https://github.com/rajgupta2/Engineer",
-    },
-    website: {
-      icon: <TbWorld />,
-      url: "https://rajgupta2.github.io/Engineer/",
-    },
-    imgUrl: "Engineer.png",
-  },
+  }
 ];
 export default Projects_data;

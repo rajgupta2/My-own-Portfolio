@@ -48,13 +48,6 @@ const About = () => {
           </Fade>
         </div>
       </div>
-      <div className="row">
-        <Fade left className="mt-4 mb-4">
-          <a href="/contact" className="btn btn-lg border-primary">
-            <span className="text-primary p-5 m-4">Contact me</span>
-          </a>
-        </Fade>
-      </div>
     </div>
   );
 };
